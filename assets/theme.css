@@ -1003,6 +1003,16 @@ input:focus-visible {
   color: var(--muted);
   margin: 24px 0 0;
 }
+.contact-methods {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+.contact-methods .contact-link {
+  width: 100%;
+  margin-top: 0;
+}
 .contact-link {
   position: relative;
   display: block;
@@ -1225,6 +1235,10 @@ input:focus-visible {
   }
   .contact-layout {
     display: block;
+  }
+  .contact-methods {
+    width: fit-content;
+    margin-top: 30px;
   }
   .contact-link {
     width: fit-content;
@@ -1511,6 +1525,9 @@ input:focus-visible {
   }
   .contact-section {
     padding-block: 55px;
+  }
+  .contact-methods {
+    width: 100%;
   }
   .contact-layout > div > p {
     font-size: 1rem;

@@ -44,4 +44,4 @@
 
 ## Контакты
 
-[mail@alexeysmirnov.ru](mailto:mail@alexeysmirnov.ru) · [Личный сайт](https://alexeysmirnov.ru/) · [GitHub](https://github.com/AlexeySmirnov74)
+[mail@alexeysmirnov.ru](mailto:mail@alexeysmirnov.ru) · [Telegram: @finjoker](https://t.me/finjoker) · [Личный сайт](https://alexeysmirnov.ru/) · [GitHub](https://github.com/AlexeySmirnov74)
