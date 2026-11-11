@@ -1,4 +1,10 @@
 {
+  "designReference": {
+    "title": "Cyberpunk Neural Login",
+    "url": "https://notepadplusplus.in/css-animations/cyberpunk-neural-login/",
+    "author": "Lawanya Chaudhari",
+    "usage": "Visual reference for an independently implemented portfolio theme and neural-network animation."
+  },
   "images": [
     {
       "file": "assets/images/yrm100x-device.webp",
@@ -51,8 +57,8 @@
       "bytes": 283580
     },
     {
-      "file": "assets/images/social.png",
-      "description": "Social sharing image rendered from the portfolio hero, including the original code-native system diagram.",
+      "file": "assets/images/social-neural.png",
+      "description": "Social sharing image rendered from the published neural portfolio hero and its original code-native diagram.",
       "width": 1200,
       "height": 630
     }

@@ -1,0 +1,299 @@
+/* Decorative layers are deliberately behind the content and ignore input. */
+.diagram-ring,
+.diagram-inner-ring,
+.diagram-globe,
+.neural-orbit {
+  transform-origin: 250px 195px;
+  animation: neural-core-turn 18s linear infinite;
+  animation-play-state: paused;
+}
+.diagram-inner-ring {
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+.diagram-globe {
+  animation-duration: 24s;
+}
+.neural-orbit {
+  animation-duration: 32s;
+  animation-direction: reverse;
+}
+.diagram-traffic {
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 3px #00ffc8);
+  animation: neural-core-traffic 3s linear infinite;
+  animation-play-state: paused;
+}
+body.neural-active .diagram-ring,
+body.neural-active .diagram-inner-ring,
+body.neural-active .diagram-globe,
+body.neural-active .neural-orbit,
+body.neural-active .diagram-traffic {
+  animation-play-state: running;
+}
+body.motion-paused .diagram-ring,
+body.motion-paused .diagram-inner-ring,
+body.motion-paused .diagram-globe,
+body.motion-paused .neural-orbit,
+body.motion-paused .diagram-traffic,
+body.motion-suspended .diagram-ring,
+body.motion-suspended .diagram-inner-ring,
+body.motion-suspended .diagram-globe,
+body.motion-suspended .neural-orbit,
+body.motion-suspended .diagram-traffic {
+  animation-play-state: paused;
+}
+@keyframes neural-core-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes neural-core-traffic {
+  to {
+    stroke-dashoffset: -148;
+  }
+}
+
+.glitch-title {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+.glitch-title::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: #ff4bb3;
+  opacity: 0;
+  clip-path: inset(36% 0 45% 0);
+  pointer-events: none;
+}
+body.neural-active .glitch-title::after {
+  animation: neural-title-interference 14s steps(1, end) infinite;
+}
+body.motion-paused .glitch-title::after,
+body.motion-suspended .glitch-title::after {
+  animation: none;
+  opacity: 0;
+}
+@keyframes neural-title-interference {
+  0%,
+  95%,
+  97%,
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  95.5%,
+  96.5% {
+    opacity: 0.65;
+    transform: translateX(3px);
+  }
+  96% {
+    opacity: 0.35;
+    transform: translateX(-2px);
+  }
+}
+
+#neural-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.hero-stage {
+  isolation: isolate;
+}
+
+.cyber-grid {
+  position: absolute;
+  z-index: -1;
+  inset: 22% -16% -15%;
+  overflow: hidden;
+  pointer-events: none;
+  perspective: 540px;
+  opacity: 0.28;
+  mask-image: linear-gradient(transparent 1%, #000 44%, transparent 96%);
+  -webkit-mask-image: linear-gradient(
+    transparent 1%,
+    #000 44%,
+    transparent 96%
+  );
+}
+
+.cyber-grid::before {
+  position: absolute;
+  content: "";
+  inset: -50% -20%;
+  transform-origin: center 58%;
+  transform: rotateX(64deg) translateY(0);
+  background-image:
+    linear-gradient(rgba(0, 255, 200, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 200, 0.3) 1px, transparent 1px);
+  background-size: 64px 64px;
+  animation: neural-grid-travel 9s linear infinite;
+  animation-play-state: paused;
+  will-change: transform;
+}
+
+.neural-art {
+  isolation: isolate;
+}
+
+.hero-stage::after,
+.neural-art::after {
+  position: absolute;
+  content: "";
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    transparent 0%,
+    transparent 42%,
+    rgba(0, 255, 200, 0.025) 48%,
+    rgba(0, 255, 200, 0.09) 50%,
+    rgba(0, 255, 200, 0.025) 52%,
+    transparent 58%,
+    transparent 100%
+  );
+  background-size: 100% 220%;
+  background-position: 0 150%;
+  opacity: 0.7;
+  animation: neural-scan 14s linear infinite;
+  animation-play-state: paused;
+}
+
+.neural-art::after {
+  opacity: 0.45;
+  animation-duration: 19s;
+  animation-delay: -7s;
+}
+
+.neon-edge {
+  position: relative;
+  isolation: isolate;
+  animation: neural-edge-glow 11s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+
+.neon-edge::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  inset: -1px;
+  padding: 1px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 45deg,
+    rgba(0, 255, 200, 0.07),
+    rgba(0, 255, 200, 0.48),
+    rgba(0, 255, 200, 0.06) 28%,
+    rgba(255, 0, 170, 0.28) 52%,
+    rgba(255, 0, 170, 0.07) 69%,
+    rgba(0, 255, 200, 0.38) 87%,
+    rgba(0, 255, 200, 0.07)
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  opacity: 0.65;
+  animation: neural-edge-tint 11s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+
+body.neural-active .cyber-grid::before,
+body.neural-active .hero-stage::after,
+body.neural-active .neural-art::after,
+body.neural-active .neon-edge,
+body.neural-active .neon-edge::before {
+  animation-play-state: running;
+}
+
+body.motion-paused .cyber-grid::before,
+body.motion-paused .hero-stage::after,
+body.motion-paused .neural-art::after,
+body.motion-paused .neon-edge,
+body.motion-paused .neon-edge::before,
+body.motion-suspended .cyber-grid::before,
+body.motion-suspended .hero-stage::after,
+body.motion-suspended .neural-art::after,
+body.motion-suspended .neon-edge,
+body.motion-suspended .neon-edge::before {
+  animation-play-state: paused;
+}
+
+body.motion-paused .hero-stage::after,
+body.motion-paused .neural-art::after {
+  opacity: 0;
+}
+
+@keyframes neural-grid-travel {
+  from {
+    transform: rotateX(64deg) translateY(0);
+  }
+  to {
+    transform: rotateX(64deg) translateY(64px);
+  }
+}
+
+@keyframes neural-scan {
+  from {
+    background-position: 0 150%;
+  }
+  to {
+    background-position: 0 -50%;
+  }
+}
+
+@keyframes neural-edge-glow {
+  from {
+    box-shadow: 0 0 24px rgba(0, 255, 200, 0.015);
+  }
+  to {
+    box-shadow:
+      0 0 32px rgba(0, 255, 200, 0.055),
+      0 4px 28px rgba(255, 0, 170, 0.025);
+  }
+}
+
+@keyframes neural-edge-tint {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 700px) {
+  .cyber-grid {
+    opacity: 0.2;
+  }
+  .cyber-grid::before {
+    background-size: 48px 48px;
+  }
+  #neural-canvas {
+    opacity: 0.76;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:not(.neural-active) .cyber-grid::before,
+  body:not(.neural-active) .hero-stage::after,
+  body:not(.neural-active) .neural-art::after,
+  body:not(.neural-active) .neon-edge,
+  body:not(.neural-active) .neon-edge::before {
+    animation-play-state: paused;
+  }
+}
