@@ -1,0 +1,82 @@
+{
+  "images": [
+    {
+      "file": "assets/images/yrm100x-device.webp",
+      "repository": "AlexeySmirnov74/YRM100X_PRO",
+      "source": "https://github.com/AlexeySmirnov74/YRM100X_PRO/blob/main/docs/images/yrm100x-flipper-assembled.jpg",
+      "description": "Original photograph of Flipper Zero connected to the YRM100X external UHF RFID reader.",
+      "processing": "WebP quality 89; original dimensions preserved.",
+      "width": 960,
+      "height": 1280,
+      "bytes": 94504
+    },
+    {
+      "file": "assets/images/a100-grafana.webp",
+      "repository": "AlexeySmirnov74/a100-mig-lab",
+      "source": "https://github.com/AlexeySmirnov74/a100-mig-lab/blob/main/screenshots/llm4.png",
+      "description": "Original Grafana LLMOps dashboard from the A100 MIG experiment.",
+      "processing": "Lossless WebP; original dimensions preserved.",
+      "width": 1596,
+      "height": 863,
+      "bytes": 50830
+    },
+    {
+      "file": "assets/images/usbbridge-phone.webp",
+      "repository": "AlexeySmirnov74/USB-to-Network-Bridge",
+      "source": "https://github.com/AlexeySmirnov74/USB-to-Network-Bridge/blob/main/docs/assets/connect-phone.jpg",
+      "description": "Original Windows screenshot showing a phone connected through USB to Network Bridge, Device Manager, and phone storage.",
+      "processing": "Resized to 1800 px wide; WebP quality 89.",
+      "width": 1800,
+      "height": 1059,
+      "bytes": 130572
+    },
+    {
+      "file": "assets/images/mlup-grafana.webp",
+      "repository": "AlexeySmirnov74/mlup-distributed",
+      "source": "https://github.com/AlexeySmirnov74/mlup-distributed/blob/main/screenshots/Grafana1.png",
+      "description": "Original Grafana MLup Redis Queue SRE dashboard.",
+      "processing": "Lossless WebP; original dimensions preserved.",
+      "width": 1512,
+      "height": 824,
+      "bytes": 55198
+    },
+    {
+      "file": "assets/images/neva-board.webp",
+      "repository": "AlexeySmirnov74/Neva306IS0ReverseEngineering",
+      "source": "https://github.com/AlexeySmirnov74/Neva306IS0ReverseEngineering/blob/master/Images/begin.jpg",
+      "description": "Original photograph of the Neva 306 IS0 board connected to a CH341A programmer.",
+      "processing": "Resized to 1600 px wide; WebP quality 89.",
+      "width": 1600,
+      "height": 899,
+      "bytes": 283580
+    },
+    {
+      "file": "assets/images/social.png",
+      "description": "Social sharing image rendered from the portfolio hero, including the original code-native system diagram.",
+      "width": 1200,
+      "height": 630
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Manrope",
+      "weight": "400 800",
+      "style": "normal",
+      "license": "SIL Open Font License 1.1",
+      "licenseFile": "assets/fonts/OFL.txt",
+      "upstream": "https://github.com/google/fonts/tree/main/ofl/manrope",
+      "files": [
+        {
+          "file": "assets/fonts/manrope-latin-wght.woff2",
+          "source": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+          "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+        },
+        {
+          "file": "assets/fonts/manrope-cyrillic-wght.woff2",
+          "source": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggOxSuXd.woff2",
+          "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+        }
+      ]
+    }
+  ]
+}
