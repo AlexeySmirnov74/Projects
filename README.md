@@ -4,13 +4,14 @@
 
 Открытые разработки на стыке электроники, системного программирования и AI-инфраструктуры.
 
-| Проект | Описание | Стек |
-| --- | --- | --- |
-| [YRM100X PRO](https://github.com/AlexeySmirnov74/YRM100X_PRO) | UHF RFID-инструмент для Flipper Zero и считывателей YRM100X. | C, Flipper Zero, UART |
-| [A100 MIG Lab](https://github.com/AlexeySmirnov74/a100-mig-lab) | Три LLM, отдельная стресс-нагрузка и мониторинг на одной NVIDIA A100 40GB. | Python, Docker, NVIDIA MIG, LiteLLM, Grafana |
-| [USB to Network Bridge](https://github.com/AlexeySmirnov74/USB-to-Network-Bridge) | Подключение USB-устройств к Windows-компьютеру по сети. | Rust, Win32, USB/IP |
-| [MLup Distributed](https://github.com/AlexeySmirnov74/mlup-distributed) | Распределённый ML-сервинг на базе MLup с очередью Redis и независимыми воркерами. | Python, FastAPI, Redis |
-| [Нева 306: reverse engineering](https://alexeysmirnov74.github.io/Neva306IS0ReverseEngineering/) | Исследование EEPROM, формата данных и дампов памяти электросчётчика. | AutoIt, EEPROM, CH341A |
+| Проект                                                                                           | Описание                                                                                                                                   | Стек                                         |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| [YRM100X PRO](https://github.com/AlexeySmirnov74/YRM100X_PRO)                                    | UHF RFID-инструмент для Flipper Zero и считывателей YRM100X.                                                                               | C, Flipper Zero, UART                        |
+| [A100 MIG Lab](https://github.com/AlexeySmirnov74/a100-mig-lab)                                  | Три LLM, отдельная стресс-нагрузка и мониторинг на одной NVIDIA A100 40GB.                                                                 | Python, Docker, NVIDIA MIG, LiteLLM, Grafana |
+| [Get Copy-Paste Back](https://github.com/AlexeySmirnov74/get-copy-paste-back)                    | Обмен текстом, изображениями, файлами и папками с удалённым Windows через виртуальную камеру и звук. Проверено с VMware / Omnissa Horizon. | C#, .NET Framework, Rust, C++                |
+| [USB to Network Bridge](https://github.com/AlexeySmirnov74/USB-to-Network-Bridge)                | Подключение USB-устройств к Windows-компьютеру по сети.                                                                                    | Rust, Win32, USB/IP                          |
+| [MLup Distributed](https://github.com/AlexeySmirnov74/mlup-distributed)                          | Распределённый ML-сервинг на базе MLup с очередью Redis и независимыми воркерами.                                                          | Python, FastAPI, Redis                       |
+| [Нева 306: reverse engineering](https://alexeysmirnov74.github.io/Neva306IS0ReverseEngineering/) | Исследование EEPROM, формата данных и дампов памяти электросчётчика.                                                                       | AutoIt, EEPROM, CH341A                       |
 
 Скриншоты A100 сохранены из исходного эксперимента. Ограничения проверки текущей версии описаны в README проекта; портфолио не заявляет новые измерения производительности.
 
@@ -21,7 +22,7 @@
 - [JupyterFlow](https://github.com/AlexeySmirnov74/JupyterFlow) — заготовка без опубликованного кода и описания.
 - [Projects](https://github.com/AlexeySmirnov74/Projects) — исходный код этого портфолио.
 
-Полнота списка проверена по публичному GitHub API 11 ноября 2026 года: учтены все 9 репозиториев.
+Полнота списка проверена по публичному GitHub API 15 ноября 2026 года: учтены все 10 репозиториев.
 
 ## Контакты
 

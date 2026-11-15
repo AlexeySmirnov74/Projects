@@ -7,6 +7,16 @@
   },
   "images": [
     {
+      "file": "assets/images/get-copy-paste-back.webp",
+      "repository": "AlexeySmirnov74/get-copy-paste-back",
+      "source": "https://github.com/AlexeySmirnov74/get-copy-paste-back/blob/main/screenshots/sc2.png",
+      "description": "Original Get Copy-Paste Back 0.6.39 screenshot showing the color transmission preview over a redirected virtual camera.",
+      "processing": "Lossless WebP; original dimensions preserved.",
+      "width": 1593,
+      "height": 1020,
+      "bytes": 440132
+    },
+    {
       "file": "assets/images/yrm100x-device.webp",
       "repository": "AlexeySmirnov74/YRM100X_PRO",
       "source": "https://github.com/AlexeySmirnov74/YRM100X_PRO/blob/main/docs/images/yrm100x-flipper-assembled.jpg",
